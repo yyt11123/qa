@@ -1,0 +1,23 @@
+@'
+# ===== 缓存 / 临时 =====
+__pycache__/
+*.pyc
+*.zip
+output/
+
+# ===== 真实业务数据，禁止外传（README 第5节）=====
+*.jsonl
+*.xlsx
+data/
+*.pdf
+*.json
+
+# ===== 密钥 / 配置，绝对不能传 =====
+*.yaml
+*.yml
+.env
+config/*.local.*
+**/secrets*
+**/*api_key*
+**/*credentials*
+'@ | Set-Content -Encoding utf8 .gitignore
