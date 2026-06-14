@@ -1,0 +1,150 @@
+[
+  {
+    "qa_id": "pilot_001",
+    "session_id": "PILOT",
+    "turn_index": 0,
+    "question": "安达 哮喘投保要做什么检查",
+    "question_raw": "安达 哮喘投保要做什么检查",
+    "source": "generated",
+    "question_type": "单业务细节咨询",
+    "sub_type": "健康核保",
+    "company": "安达",
+    "difficulty": "easy",
+    "golden_answer": "哮喘投保需提交呼吸系统问卷(NB084)；根据情况可能需医生验身(ME)或肺功能检查(PFT)（如上次病发在一个月内）；如需长期覆诊则需主诊医生报告(APS)。",
+    "answer_full": "安达对哮喘投保的核保要求包括：\n1. 填写呼吸系统问卷 NB084 (Respiratory Disease Questionnaire)\n2. 医生验身 Medical Examination (ME) 或肺功能检查 Pulmonary Function Test (PFT)——如上次病发在一个月内发生\n3. 主诊医生报告 Attending Physician's Statement (APS)——如需长期覆诊\n\n核保方向取决于哮喘的发病年龄、病发频率、严重程度、治疗方法及吸烟习惯。",
+    "answer_keypoints": [
+      "提交呼吸系统问卷 NB084",
+      "如上次病发一个月内需做 ME/PFT（医生验身/肺功能检查）",
+      "如需长期覆诊需主诊医生报告 APS"
+    ],
+    "source_doc": "保司文件/安达/Chubb_常見疾病指引.pdf",
+    "source_page": [8],
+    "relevant_chunk_ids": [
+      "0c047a9c_chunk_0004"
+    ],
+    "is_answerable": true,
+    "eval_notes": "答案仅覆盖核保要求（需要什么文件/检查），未涉及具体核保决定（标准/加费/拒保），因为核保指引表在 section_summary 类chunk中。评分时以核保要求为准即可。",
+    "verified_by": "待人工审核",
+    "verify_status": "draft"
+  },
+  {
+    "qa_id": "pilot_002",
+    "session_id": "PILOT",
+    "turn_index": 0,
+    "question": "安达高资产 免体检限额是多少",
+    "question_raw": "安达高资产 免体检限额是多少",
+    "source": "generated",
+    "question_type": "单业务细节咨询",
+    "sub_type": "产品信息",
+    "company": "安达",
+    "difficulty": "easy",
+    "golden_answer": "安达高资产产品(HNW)免体检限额：地区1客户18-55岁，最近两年内HNW产品总保障额≤300万美元且安达所有产品总保障额≤400万美元；地区2客户18-55岁，HNW产品≤150万美元且所有产品≤300万美元；儿童(0-17岁)总保额≤200万美元。免体检限额不适用于优良或特级优良客户。",
+    "answer_full": "安达高资产业务人寿保障产品的免体检限额规则（免體檢限額適用於以下情況）：\n\n1. 地区1 — 18至55岁：当前新生意申请和最近两年内的HNW产品总保障额≤300万美元，并且安达人寿最近两年内的所有产品总保障额不超过400万美元。\n2. 地区2 — 18至55岁：当前新生意申请和最近两年内的HNW产品总保障额≤150万美元，并且安达人寿最近两年内的所有产品总保障额不超过300万美元。\n3. 儿童（0-17岁）：目前在安达人寿的申请和总保额不超过200万美元。\n\n注意事项：免体检限额不适用于优良或特级优良客户；必须回答申请书上的所有健康问题。\n\nHNW产品包括：世代传承保险系列(PL)、特选定期寿险系列(PTL)、凝晋人生保险计划-整付保费(AWL)、凝晋人生保险计划-定期保费(RWL)<已停售>、凝晋人生保险计划II-定期保费(RSL)。",
+    "answer_keypoints": [
+      "地区1(18-55岁): HNW产品≤300万美元 + 所有产品≤400万美元",
+      "地区2(18-55岁): HNW产品≤150万美元 + 所有产品≤300万美元",
+      "儿童(0-17岁): 总保额≤200万美元",
+      "免体检限额不适用于优良/特级优良客户"
+    ],
+    "source_doc": "保司文件/安达/Chubb_Manual 高資產業務人壽保障產品指引 (CH) - Clean_2024Oct.pdf",
+    "source_page": [8],
+    "relevant_chunk_ids": [
+      "52694a0a_chunk_0007"
+    ],
+    "is_answerable": true,
+    "eval_notes": "地区1和地区2的定义未在本chunk中出现（在文档其他部分的国家组别定义表中），评分时不应因未解释地区定义而扣分。HNW产品列表由本chunk提供，属完整信息。",
+    "verified_by": "待人工审核",
+    "verify_status": "draft"
+  },
+  {
+    "qa_id": "pilot_003",
+    "session_id": "PILOT",
+    "turn_index": 0,
+    "question": "安达核保 肺结节要交什么材料 怎么看",
+    "question_raw": "安达核保 肺结节要交什么材料 怎么看",
+    "source": "generated",
+    "question_type": "单业务细节咨询",
+    "sub_type": "健康核保",
+    "company": "安达",
+    "difficulty": "medium",
+    "golden_answer": "肺结节核保需提交：(1)肿瘤问卷NB079；(2)过往肺部电脑扫描(CT)报告；(3)最近期肺部CT报告；(4)病理报告(如有)。核保方向取决于：吸烟者或非吸烟者、结节形状是否规则/病理结果、以及有无肺癌家族史。",
+    "answer_full": "安达对肺部结节(Pulmonary Nodule)的核保要求：\n\n**需提交材料：**\n- 肿瘤问卷 NB079 (Tumour Questionnaire)\n- 过往肺部电脑扫描报告\n- 最近期肺部电脑扫描报告\n- 病理报告（如有）\n\n**核保决定参考因素：**\n- 吸烟者或非吸烟者\n- 结节形状规则/病理\n- 无肺癌家族史\n\n肺结节是指直径达3厘米或以下的圆形病灶，从CT中可见是实性、半实性或磨玻璃样，有可能是早期肺癌。",
+    "answer_keypoints": [
+      "提交肿瘤问卷 NB079",
+      "提交过往和最近期肺部CT报告",
+      "提交病理报告（如有）",
+      "核保考虑吸烟史、结节形状/病理、肺癌家族史"
+    ],
+    "source_doc": "保司文件/安达/Chubb_常見疾病指引.pdf",
+    "source_page": [13],
+    "relevant_chunk_ids": [
+      "0c047a9c_chunk_0024",
+      "0c047a9c_chunk_0025"
+    ],
+    "is_answerable": true,
+    "eval_notes": "答案整合了两个chunk（核保要求+核保决定参考）。疾病背景描述chunk(0c047a9c_chunk_0023)未引用但answer_full包含了部分背景信息，如影响评分可调整。具体核保决定（标准/加费/拒保）在section_summary中，此处不涵盖。",
+    "verified_by": "待人工审核",
+    "verify_status": "draft"
+  },
+  {
+    "qa_id": "pilot_004",
+    "session_id": "PILOT",
+    "turn_index": 0,
+    "question": "安达 私人银行客户买1000万美金寿险 要什么证明",
+    "question_raw": "安达 私人银行客户买1000万美金寿险 要什么证明",
+    "source": "generated",
+    "question_type": "单业务细节咨询",
+    "sub_type": "产品信息",
+    "company": "安达",
+    "difficulty": "medium",
+    "golden_answer": "私人银行客户(银行关系>12个月)投保1000万美元(保障额在750万-3000万区间)需提交：申请书、经济状况问卷、客户背景报告及银行证明书。如银行关系<12个月或资料不足，需独立收入及/或资产证明。",
+    "answer_full": "安达高资产产品财务核保指引，私人银行客户（银行关系>十二个月）的财务文件要求如下：\n\n| 保障额（美元） | 私人银行客户（关系>12个月）所需文件 |\n|---|---|\n| ≤200万 | 只需于申请书上披露 |\n| 200万-500万 | 申请书、经济状况问卷及客户背景报告 |\n| 500万-750万 | 申请书、经济状况问卷及客户背景报告 |\n| 750万-3000万 | 申请书、经济状况问卷、客户背景报告及银行证明书 |\n| >3000万 | 申请书、经济状况问卷、客户背景报告、独立收入及/或资产证明 |\n\n1000万美元落在750万-3000万区间 → 需申请书+经济状况问卷+客户背景报告+银行证明书。\n\n注意事项：如提供的证明不符合要求、不完整或不清楚，核保员保留权利要求进一步的财务要求/证明。",
+    "answer_keypoints": [
+      "保障额750万-3000万美元: 需申请书+经济状况问卷+客户背景报告+银行证明书",
+      "私人银行客户指银行关系>12个月（参考私人银行名单）",
+      "保障额≤200万仅需申请书披露，200万-750万需申请书+问卷+背景报告",
+      "如证明不符合/不完整，核保员可要求进一步证明"
+    ],
+    "source_doc": "保司文件/安达/Chubb_Manual 高資產業務人壽保障產品指引 (CH) - Clean_2024Oct.pdf",
+    "source_page": [15],
+    "relevant_chunk_ids": [
+      "52694a0a_chunk_0033",
+      "52694a0a_chunk_0034"
+    ],
+    "is_answerable": true,
+    "eval_notes": "表格内容含has_table的leaf chunk。私人银行名单未在本chunk中（在文档后续章节），评分时不应要求列出具体银行。保障额区间边界值（如500万、750万、3000万）的归属可能需人工确认——表格中'5,000,001-7,500,000'和'7,500,001-30,000,000'的分界是明确的。",
+    "verified_by": "待人工审核",
+    "verify_status": "draft"
+  },
+  {
+    "qa_id": "pilot_005",
+    "session_id": "PILOT",
+    "turn_index": 0,
+    "question": "安达 55岁有高血压 买500万美金寿险 体检做什么 能保吗",
+    "question_raw": "安达 55岁有高血压 买500万美金寿险 体检做什么 能保吗",
+    "source": "generated",
+    "question_type": "单业务细节咨询",
+    "sub_type": "健康核保",
+    "company": "安达",
+    "difficulty": "hard",
+    "golden_answer": "高血压核保要求的专项检查：医生验身(ME)、显微镜尿液分析(MU)；如病症已逾10年或客户年龄≥50岁，需加做静息心电图(Resting ECG)。核保方向取决于确诊年龄、血压控制及并发症。但「能否投保/具体加费」的核保决定表在指引摘要(section_summary)中，按标注规则无法作为出处引用，因此该部分无法给出明确答案。",
+    "answer_full": "【可回答部分——体检要求】\n\n高血压专项核保要求（文档2 第24页）：\n- 医生验身 Medical Examination (ME)\n- 显微镜尿液分析 Micro-Urinalysis (MU)\n- 如病症已有10年，或客户年龄为50岁或以上，需要静息心电图 Resting Electrocardiogram (Resting ECG)\n\n一般验身要求（文档1 第8页，按保额500万美元查表）：\n- 年龄46-55，保障额300万-500万美元区间 → ME, BUP, MUC, ECG\n\n综合：55岁高血压客户投保500万美元，至少需要 ME + MU + BUP + MUC + ECG（其中ME和ECG两项要求重叠）。\n\n【无法回答部分——核保决定】\n\n「能否投保/加费多少」的具体核保决定表位于指引摘要（section_summary类型chunk），其内容为概括描述（\"针对未确定病因的血尿，根据其程度提供人寿、危疾/早期危疾及住院保险的核保指引\"格式），未对高血压给出具体判定。且按标注规则section_summary不作为标准出处。文档中仅有核保方向描述（确诊年龄、血压控制、并发症），无具体加费比例或可保性判定标准。",
+    "answer_keypoints": [
+      "高血压专项: ME + MU + (病症≥10年或年龄≥50岁需ECG)",
+      "按保额500万验身: ME + BUP + MUC + ECG（年龄46-55, 300-500万区间）",
+      "核保方向: 确诊年龄、血压控制及并发症",
+      "【拒答】具体能否投保/加费比例：指引摘要(section_summary)不可作为出处，无法给出明确判定"
+    ],
+    "source_doc": "保司文件/安达/Chubb_常見疾病指引.pdf; 保司文件/安达/Chubb_Manual 高資產業務人壽保障產品指引 (CH) - Clean_2024Oct.pdf",
+    "source_page": [24, 8],
+    "relevant_chunk_ids": [
+      "0c047a9c_chunk_0067",
+      "0c047a9c_chunk_0068",
+      "52694a0a_chunk_0006"
+    ],
+    "is_answerable": false,
+    "eval_notes": "【重点人工审核】此条设为is_answerable=false以演示拒答场景。理由：(1)「能否投保/加费比例」的核保决定表在section_summary中(0c047a9c_chunk_0069)，按规则不应引用；(2)可回答的部分（体检项目）来自两个文档三个chunk，需人工确认综合逻辑是否合理——高血压专项检查和按保额的一般验身要求有重叠(ME, ECG)，实际业务中是否取并集需核保专家确认；(3)高血压核保决定参考仅给方向（确诊年龄、血压控制、并发症），不足以做二元判定。",
+    "verified_by": "待人工审核",
+    "verify_status": "draft"
+  }
+]

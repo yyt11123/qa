@@ -1,0 +1,9 @@
+# 保险文档源数据（体积大，不含代码逻辑）
+data/
+
+# 生成输出
+output/
+
+# Python
+__pycache__/
+*.pyc
